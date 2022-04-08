@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-9">
+      <h4>Compras</h4>
+    </div>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+
+    <table class="table table-bordered table-dark table-hover mt-3">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Number</th>
+        <th>date</th>
+        <th>amount</th>
+        <th>provider</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <%@purchases.each do |config| %>
+        <tr>
+          <td><%= config.id %></td>
+          <td><%= config.number %></td>
+          <td><%= config.date %></td>
+          <td><%= config.amount %></td>
+          <td><%= config.provider.name%></td>
+        </tr>
+      <%end%>
+      </tbody>
+    </table>
+  </div>
+</div>
+

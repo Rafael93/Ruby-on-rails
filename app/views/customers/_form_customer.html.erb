@@ -1,0 +1,34 @@
+
+<%= form_with model: Customer do |f| %>
+
+  <div class="mb-3">
+    <%=f.label :first_name, class:'form-label' %>
+    <%=f.text_field :first_name, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :last_name, class:'form-label' %>
+    <%=f.text_field :last_name, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :document, class:'form-label' %>
+    <%=f.text_field :document, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :first_name, class:'form-label' %>
+    <%=f.text_field :first_name, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :ruc, class:'form-label' %>
+    <%=f.text_field :ruc, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :email, class:'form-label' %>
+    <%= email_field :user, :address, class:"form-control" %>
+  </div>
+  <div class="mb-3">
+    <%=f.label :phone, class:'form-label' %>
+    <%=f.text_field :phone, class:"form-control" %>
+  </div>
+
+  <%=f.submit 'guardar' %>
+<% end %>

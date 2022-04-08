@@ -1,0 +1,36 @@
+
+
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-9">
+      <h4>Productos</h4>
+    </div>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+
+    <table class="table table-bordered table-dark table-hover mt-3">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Minimum amount</th>
+          <th>Product Type</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <%@products.each do |config| %>
+          <tr>
+            <td><%= config.id %></td>
+            <td><%= config.name %></td>
+            <td><%= config.cantMin %></td>
+            <td><%= config.cantMin %></td>
+            <td><%= config.Product_types.description if config.Product_types %></td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+  </div>
+</div>

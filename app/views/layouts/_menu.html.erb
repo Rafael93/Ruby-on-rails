@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class:'navbar-brand' %>
+        </li>
+        <li class="nav-item">
+          <%=link_to 'Configuraciones', settings_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%=link_to 'Clientes', customers_path, class:'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%=link_to 'Productos', products_path, class:'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%=link_to 'Proveedores', providers_path, class:'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%=link_to 'Compras', purchases_path, class:'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%=link_to 'Ventas', sales_path, class:'nav-link' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
